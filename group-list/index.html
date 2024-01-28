@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group list</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              md: "865px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="h-screen w-screen bg-gray-800 flex items-center justify-center">
+      <div
+        class="w-11/12 sm:w-2/3 h-4/6 bg-slate-700 rounded-3xl flex items-center p-9"
+      >
+        <div
+          class="h-full rounded-3xl bg-gray-800 flex flex-col items-center justify-center p-3.5 gap-3.5"
+        >
+          <div class="w-14 h-14 flex items-center justify-center rounded-xl">
+            <img src="./images/messages.svg" />
+          </div>
+          <div
+            class="w-14 h-14 flex items-center justify-center rounded-xl bg-slate-700"
+          >
+            <img src="./images/group.svg" />
+          </div>
+          <div class="w-14 h-14 flex items-center justify-center rounded-xl">
+            <img src="./images/connect.svg" />
+          </div>
+          <div class="w-14 h-14 flex items-center justify-center rounded-xl">
+            <img src="./images/settings.svg" />
+          </div>
+        </div>
+        <div class="px-6 h-full w-full flex flex-col justify-between gap-5">
+          <div class="w-full flex justify-between">
+            <div class="flex items-center">
+              <img src="./images/arrow.svg" />
+              <h1 class="text-2xl text-gray-300">Groups</h1>
+            </div>
+            <div class="flex bg-gray-800 rounded-xl p-0.5">
+              <div
+                class="w-14 h-14 flex items-center justify-center md:bg-slate-700 md:rounded-l-xl"
+              >
+                <img src="./images/grid.svg" />
+              </div>
+              <div
+                class="w-14 h-14 flex items-center justify-center max-md:bg-slate-700 max-md:rounded-r-xl"
+              >
+                <img src="./images/linear.svg" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-wrap items-center justify-center gap-5 overflow-auto"
+          >
+            <div
+              class="flex flex-col gap-3.5 items-center justify-center bg-slate-500 w-44 h-52 rounded-xl"
+            >
+              <div
+                class="flex items-center justify-center rounded-full w-14 h-14 bg-gray-700"
+              >
+                <img src="./images/new.svg" />
+              </div>
+              <p class="text-gray-300 text-sm font-normal">Create Group</p>
+            </div>
+            <div
+              class="relative flex flex-col items-center justify-center gap-1.5 bg-gray-800 w-44 h-52 rounded-xl"
+            >
+              <img
+                src="./images/cuisine.png"
+                class="object-cover w-20 h-20 rounded-full"
+              />
+              <p class="text-gray-300 text-lg font-bold">Cuisine</p>
+              <p class="text-gray-300 text-sm font-normal">36 members</p>
+              <div
+                class="w-3 h-3 bg-indigo-600 rounded-full absolute top-2 right-2"
+              ></div>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center gap-1.5 bg-gray-800 w-44 h-52 rounded-xl"
+            >
+              <img
+                src="./images/art.png"
+                class="object-cover w-20 h-20 rounded-full"
+              />
+              <p class="text-gray-300 text-lg font-bold">Art</p>
+              <p class="text-gray-300 text-sm font-normal">9 members</p>
+            </div>
+            <div
+              class="relative flex flex-col items-center justify-center gap-1.5 bg-gray-800 w-44 h-52 rounded-xl"
+            >
+              <img
+                src="./images/workout.png"
+                class="object-cover w-20 h-20 rounded-full"
+              />
+              <p class="text-gray-300 text-lg font-bold">Workout</p>
+              <p class="text-gray-300 text-sm font-normal">27 members</p>
+              <div
+                class="w-3 h-3 bg-indigo-600 rounded-full absolute top-2 right-2"
+              ></div>
+            </div>
+            <div
+              class="relative flex flex-col items-center justify-center gap-1.5 bg-gray-800 w-44 h-52 rounded-xl"
+            >
+              <img
+                src="./images/gaming.png"
+                class="object-cover w-20 h-20 rounded-full"
+              />
+              <p class="text-gray-300 text-lg font-bold">Gaming</p>
+              <p class="text-gray-300 text-sm font-normal">105 members</p>
+              <div
+                class="w-3 h-3 bg-indigo-600 rounded-full absolute top-2 right-2"
+              ></div>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center gap-1.5 bg-gray-800 w-44 h-52 rounded-xl"
+            >
+              <img
+                src="./images/hiking.png"
+                class="object-cover w-20 h-20 rounded-full"
+              />
+              <p class="text-gray-300 text-lg font-bold">Hiking</p>
+              <p class="text-gray-300 text-sm font-normal">97 members</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center gap-1.5 bg-gray-800 w-44 h-52 rounded-xl"
+            >
+              <img
+                src="./images/yoga.png"
+                class="object-cover w-20 h-20 rounded-full"
+              />
+              <p class="text-gray-300 text-lg font-bold">Yoga</p>
+              <p class="text-gray-300 text-sm font-normal">65 members</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
